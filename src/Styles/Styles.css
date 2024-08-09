@@ -1,24 +1,15 @@
 /* src/styles/styles.css */
 body {
     font-family: Arial, sans-serif;
+    background-color: #ffffff; /* Change this to your desired color */
   }
   
-  nav ul {
-    list-style: none;
-    padding: 0;
+  div.centeredCont {
+    text-align: center;
   }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 10px;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: #000;
-  }
-  
-  nav ul li a:hover {
-    text-decoration: underline;
+
+  ul.centeredUl {
+    display: inline-block;
+    text-align: left;
   }
   

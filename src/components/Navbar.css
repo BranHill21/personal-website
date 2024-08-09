@@ -1,0 +1,42 @@
+/* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}*/
+
+div.container {
+    text-align: center;
+  }
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* src/components/Navbar.css */
+.nav-item {
+    background-color: transparent; /* Default background */
+    padding: 0;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    border-radius: 5px;
+    margin: 5px;
+  }
+  
+  .nav-item a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: inherit;
+    border-radius: 5px;
+  }
+  
+  .nav-item a:hover {
+    background-color: lightgray; /* Background color on hover */
+  }
+  
+  .nav-item .active {
+    background-color: darkgray; /* Background color for active link */
+    color: white; /* Optional: Change text color for active link */
+  }
+  
+  
