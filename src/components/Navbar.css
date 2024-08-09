@@ -1,12 +1,6 @@
-/* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}*/
-
 div.container {
     text-align: center;
-  }
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -20,23 +14,40 @@ body {
     display: inline-block;
     border-radius: 5px;
     margin: 5px;
-  }
-  
-  .nav-item a {
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.nav-item a {
     display: block;
     padding: 10px 20px;
     text-decoration: none;
     color: inherit;
     border-radius: 5px;
-  }
-  
-  .nav-item a:hover {
+}
+
+.nav-item a:hover {
     background-color: lightgray; /* Background color on hover */
-  }
-  
-  .nav-item .active {
+}
+
+.nav-item .active {
     background-color: darkgray; /* Background color for active link */
     color: white; /* Optional: Change text color for active link */
-  }
-  
-  
+}
+
+/* Ensure the navbar stays as a single row */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap; /* Prevent wrapping */
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
