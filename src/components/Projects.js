@@ -4,7 +4,7 @@ import Navbar from './Navbar';
 
 const Projects = () => {
   const Links = [
-    { path: '/Home', label: 'Home' },
+    { path: '/home', label: 'Home' },
     { path: '/about', label: 'About' },
     { path: '/skills', label: 'Skills' },
     { path: '/projects', label: 'Projects' },
@@ -16,7 +16,7 @@ const Projects = () => {
   };
 
   return (
-    <div class="centeredCont">
+    <div className="centeredCont">
       <Navbar links={Links} customStyle={Style} />
       <h1>Projects</h1>
       <p>projects coming soon</p>

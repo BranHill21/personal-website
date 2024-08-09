@@ -4,7 +4,7 @@ import Navbar from './Navbar';
 
 const About = () => {
   const aboutLinks = [
-    { path: '/Home', label: 'Home' },
+    { path: '/home', label: 'Home' },
     { path: '/about', label: 'About' },
     { path: '/skills', label: 'Skills' },
     { path: '/projects', label: 'Projects' },
@@ -16,7 +16,7 @@ const About = () => {
   };
 
   return (
-    <div class="centeredCont">
+    <div className="centeredCont">
       <Navbar links={aboutLinks} customStyle={aboutStyle} />
       <h1>About Me</h1>
       <p>Hi, I'm Brandon M. Hill, A problem-solving, test-driven individual with vast knowledge of computer science, knowledge of video game development, and leadership ability, including experience with writing and testing code in a professional environment.</p>

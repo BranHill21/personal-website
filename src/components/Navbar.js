@@ -5,7 +5,7 @@ import './Navbar.css'; // Import the CSS file
 
 const Navbar = ({ links, customStyle }) => {
   return (
-    <div class="container">
+    <div className="container">
     <nav style={customStyle}>
       <ul>
         {links.map((link, index) => (

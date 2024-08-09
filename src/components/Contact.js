@@ -4,7 +4,7 @@ import Navbar from './Navbar';
 
 const Contact = () => {
   const Links = [
-    { path: '/Home', label: 'Home' },
+    { path: '/home', label: 'Home' },
     { path: '/about', label: 'About' },
     { path: '/skills', label: 'Skills' },
     { path: '/projects', label: 'Projects' },
@@ -16,10 +16,10 @@ const Contact = () => {
   };
 
   return (
-    <div class="centeredCont">
+    <div className="centeredCont">
       <Navbar links={Links} customStyle={Style} />
       <h1>Contact</h1>
-      <ul class="centeredUl">
+      <ul className="centeredUl">
         <li>Brandon Hill</li>
         <li>469-586-8116</li>
         <li>brandon.hill2@verizon.net</li>
