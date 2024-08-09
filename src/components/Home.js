@@ -4,7 +4,7 @@ import Navbar from './Navbar';
 
 const Home = () => {
   const Links = [
-    { path: '/home', label: 'Home' },
+    { path: '/', label: 'Home' },
     { path: '/about', label: 'About' },
     { path: '/skills', label: 'Skills' },
     { path: '/projects', label: 'Projects' },
