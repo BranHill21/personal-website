@@ -8,7 +8,7 @@ body {
 
 /* src/components/Navbar.css */
 .nav-item {
-    background-color: transparent; /* Default background */
+    background-color: white; /* Default background */
     padding: 0;
     transition: background-color 0.3s ease;
     display: inline-block;
