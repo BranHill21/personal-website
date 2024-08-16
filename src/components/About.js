@@ -19,7 +19,8 @@ const About = () => {
     <div className="centeredCont">
       <Navbar links={aboutLinks} customStyle={aboutStyle} />
       <h1>About Me</h1>
-      <p>Hi, I'm Brandon M. Hill, A problem-solving, test-driven individual with vast knowledge of computer science, knowledge of video game development, and leadership ability, including experience with writing and testing code in a professional environment.</p>
+      <p>Hi, I'm Brandon M. Hill, A problem-solving, test-driven individual with vast knowledge of computer science, knowledge of video game development,</p>
+        <p> and leadership ability, including experience with writing and testing code in a professional environment.</p>
     </div>
   );
 };
