@@ -1,53 +1,93 @@
-div.container {
+/* Navbar Container */
+.container {
     text-align: center;
 }
 
-body {
-    font-family: Arial, sans-serif;
+/* Default Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background: black;
 }
 
-/* src/components/Navbar.css */
-.nav-item {
-    background-color: white; /* Default background */
+/* Nav Links (Desktop) */
+.nav-links {
+    display: flex;
+    list-style: none;
     padding: 0;
-    transition: background-color 0.3s ease;
-    display: inline-block;
-    border-radius: 5px;
+    margin: 0;
+}
+
+.nav-item {
     margin: 5px;
-    white-space: nowrap; /* Prevent text from wrapping */
 }
 
 .nav-item a {
     display: block;
     padding: 10px 20px;
     text-decoration: none;
-    color: inherit;
+    color: white;
     border-radius: 5px;
 }
 
 .nav-item a:hover {
-    background-color: lightgray; /* Background color on hover */
+    background-color: lightgray;
 }
 
 .nav-item .active {
-    background-color: darkgray; /* Background color for active link */
-    color: white; /* Optional: Change text color for active link */
+    background-color: darkgray;
+    color: white;
 }
 
-/* Ensure the navbar stays as a single row */
-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap; /* Prevent wrapping */
-    overflow-x: auto; /* Allow horizontal scrolling if needed */
+/* Responsive: Hide Nav Links & Show Hamburger on Small Screens */
+.hamburger {
+    display: none; /* Hidden on desktop */
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
 }
 
-ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-    list-style: none;
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    /* Default Navbar Styling */
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background: black;
+    }
+
+    .hamburger {
+        display: block; /* Show on mobile */
+    }
+
+    .nav-links {
+        display: none; /* Hide nav links initially */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: black;
+        text-align: center;
+        padding: 10px 0;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .nav-links.open {
+        display: flex; /* Show menu when open */
+    }
+
+    .nav-item {
+        margin: 10px 0;
+    }
 }

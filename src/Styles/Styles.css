@@ -1,7 +1,10 @@
 /* src/styles/styles.css */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: darkgray; /* Change this to your desired color */
+  font-family: 'JetBrains Mono', monospace;
+    background-color: black;
+    color: snow;
   }
   
   div.centeredCont {
