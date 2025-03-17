@@ -23,9 +23,9 @@ const Contact = () => {
         <li>Brandon Hill</li>
         <li>469-586-8116</li>
         <li>brandon.hill2@verizon.net</li>
-        <li><a href="https://www.linkedin.com/in/brandonmhill21/">Linkedin (for work related purposes)</a></li>
-        <li><a href="https://github.com/BranHill21">Github (code for my public projects)</a></li>
-        <li><a href="https://chillbhill.itch.io/">Itch.io (link for all my playable games)</a></li>
+        <li><a href="https://www.linkedin.com/in/brandonmhill21/">Linkedin</a><div>(for work related purposes)</div></li>
+        <li><a href="https://github.com/BranHill21">Github</a><div>(code for my public projects)</div></li>
+        <li><a href="https://chillbhill.itch.io/">Itch.io</a><div>(link for all my playable games)</div></li>
       </ul>
     </div>
   );
