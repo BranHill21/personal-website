@@ -2,14 +2,23 @@ import React, { useState, useEffect } from "react";
 import Navbar from "./Navbar";
 import "../Styles/About.css";
 
+// Import images directly for Webpack to resolve them correctly
+import Chilombo from "../resources/Chilombo.jpg";
+import ApolloXXI from "../resources/ApolloXXI.jpg";
+import FlowerBoy from "../resources/FlowerBoy.jpg";
+import Forward from "../resources/FORWARD.jpg";
+import Freudian from "../resources/Freudian.jpg";
+import Luv4Rent from "../resources/Luv4Rent.jpg";
+import Ctrl from "../resources/Ctrl.jpg";
+
 const albums = [
-  { name: "Chilombo - Jhené Aiko", image: "../resources/Chilombo.jpg" },
-  { name: "Apollo XXI - Steve Lacy", image: "../resources/ApolloXXI.jpg" },
-  { name: "Flower Boy - Tyler, The Creator", image: "../resources/FlowerBoy.jpg" },
-  { name: "FORWARD - Jordan Ward", image: "../resources/FORWARD.jpg" },
-  { name: "Freudian - Daniel Caesar", image: "../resources/Freudian.jpg" },
-  { name: "Luv 4 Rent - Smino", image: "../resources/Luv4Rent.jpg" },
-  { name: "Ctrl - SZA", image: "../resources/Ctrl.jpg" },
+  { name: "Chilombo - Jhené Aiko", image: Chilombo },
+  { name: "Apollo XXI - Steve Lacy", image: ApolloXXI },
+  { name: "Flower Boy - Tyler, The Creator", image: FlowerBoy },
+  { name: "FORWARD - Jordan Ward", image: Forward },
+  { name: "Freudian - Daniel Caesar", image: Freudian },
+  { name: "Luv 4 Rent - Smino", image: Luv4Rent },
+  { name: "Ctrl - SZA", image: Ctrl },
 ];
 
 const About = () => {
@@ -71,7 +80,7 @@ const About = () => {
           <li>Playing & developing video games</li>
           <li>Exploring different music genres</li>
           <li>Reading about technology and AI</li>
-          <li>Watching & playing basketball</li>
+          <li>Watching & playing baseball</li>
           <li>Experimenting with creative coding projects</li>
         </ul>
       </section>
