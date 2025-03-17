@@ -1,0 +1,95 @@
+.about-container {
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .about-section {
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .music-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .vinyl-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .vinyl {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    animation: spin 4s linear infinite;
+  }
+  
+  .vinyl-image {
+    width: 75%;
+    height: 75%;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .album-name {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .arrow {
+    background:rgb(60, 60, 60);
+    border: none;
+    border-radius: 10%;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+    color:snow;
+  }
+  
+  .arrow:hover {
+    transform: scale(1.2);
+  }
+  
+  .left-arrow {
+    margin-right: 10px;
+  }
+  
+  .right-arrow {
+    margin-left: 10px;
+  }
+  
+  .fade-in {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .fade-out {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  /* Vinyl spinning effect */
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
