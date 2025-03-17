@@ -40,7 +40,7 @@ const Home = () => {
     <div>
       <Navbar links={Links} />
       <div className="centeredCont">
-        <h1 style={{ fontFamily: "monospace", fontSize: "2rem", display: "flex", justifyContent: "center" }}>
+        <h1 style={{fontSize: "2rem", display: "flex", justifyContent: "center" }}>
           <span>{title}</span>
           <span style={{ visibility: showCursor ? "visible" : "hidden" }}>|</span>
         </h1>
