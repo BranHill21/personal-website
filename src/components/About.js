@@ -64,7 +64,7 @@ const About = () => {
       {/* Personality Section */}
       <section className="about-section">
         <h2>Brandon Hill</h2>
-        <img class="headshot" src={Bran}/>
+        <img class="headshot" src={Bran} alt="Brandon Hill's headshot"/>
         <p>
           Hi, I'm Brandon M. Hill! I'm a problem-solving, test-driven developer
           with a passion for coding, video game development, and leadership.
