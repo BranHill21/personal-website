@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import "../Styles/About.css";
 
 // Import images directly for Webpack to resolve them correctly
+import Bran from "../resources/BrandonHeadshot.jpg";
 import Chilombo from "../resources/Chilombo.jpg";
 import ApolloXXI from "../resources/ApolloXXI.jpg";
 import FlowerBoy from "../resources/FlowerBoy.jpg";
@@ -62,7 +63,8 @@ const About = () => {
 
       {/* Personality Section */}
       <section className="about-section">
-        <h2>Who Am I?</h2>
+        <h2>Brandon Hill</h2>
+        <img class="headshot" src={Bran}/>
         <p>
           Hi, I'm Brandon M. Hill! I'm a problem-solving, test-driven developer
           with a passion for coding, video game development, and leadership.
@@ -87,7 +89,7 @@ const About = () => {
 
       {/* Music Section */}
       <section className="about-section music-section">
-        <h2>Music I Enjoy 🎶</h2>
+        <h2>Music I Enjoy</h2>
         <div className="vinyl-container">
           <div className={`vinyl ${fade ? "fade-in" : "fade-out"}`}>
             <img
