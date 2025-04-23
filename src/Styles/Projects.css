@@ -3,7 +3,8 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     padding: 1rem;
-    width: 100%;
+    width: 90%;
+    margin: auto;
   }
   
   .project-card {
