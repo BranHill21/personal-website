@@ -1,0 +1,14 @@
+.sudoButton {
+    margin: auto;
+    margin-top: 1%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    display: block;
+    padding: 10px 20px;
+    width: 20%;
+    text-decoration: none;
+    color: black;
+    background-color: snow;
+    border-radius: 5px;
+}
