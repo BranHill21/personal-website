@@ -25,22 +25,22 @@ const Contact = () => {
       <p>While you are here, also take a look at my resume as I am always interested in business opportunities.</p>
       <div className="social-links">
   <div>
-    <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/brandonmhill21/"><i className="fa-brands fa-linkedin fa-10x webicon"> </i></a>
+    <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/brandonmhill21/"><i className="fa-brands fa-linkedin webicon"> </i></a>
     <br />
     <p >Linkedin</p>
-    <p>(Work related purposes)</p>
+    <p>(Work)</p>
   </div>
   <div>
-    <a target="_blank" rel="noreferrer" href="https://github.com/branhill21/"><i className="fa-brands fa-github webicon fa-10x"> </i></a>
+    <a target="_blank" rel="noreferrer" href="https://github.com/branhill21/"><i className="fa-brands fa-github webicon"> </i></a>
     <br />
     <p>GitHub</p>
-    <p>(My public coding projects)</p>
+    <p>(Projects)</p>
   </div>
   <div>
-    <a target="_blank" rel="noreferrer" href="https://chillbhill.itch.io/"><i className="fab fa-itch-io webicon fa-10x"> </i></a>
+    <a target="_blank" rel="noreferrer" href="https://chillbhill.itch.io/"><i className="fab fa-itch-io webicon"> </i></a>
     <br />
     <p>Itch.io</p>
-    <p>(Video games I developed)</p>
+    <p>(Games)</p>
   </div>
 </div>
       <br/>

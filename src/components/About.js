@@ -100,8 +100,8 @@ const About = () => {
           </div>
         </div>
         <div>
-        <button className="arrow left-arrow" onClick={prevAlbum} style={{ display: "none" }}>Prev</button>
-        <button className="arrow right-arrow" onClick={nextAlbum} style={{ display: "none" }}>Next</button>
+        <button className="arrow left-arrow" onClick={prevAlbum} style={{ display: 'none' }}>Prev</button>
+        <button className="arrow right-arrow" onClick={nextAlbum} style={{ display: 'none' }}>Next</button>
         </div>
         <p className="album-name">Currently Spinning: <strong>{albums[index].name}</strong></p>
       </section>
