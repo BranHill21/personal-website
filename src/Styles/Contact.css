@@ -49,6 +49,7 @@
 @media (max-width: 768px) {
   .social-links {
       width: 100%;
+      gap: 0rem; /* space between icons */
   }
 
   .webicon {
