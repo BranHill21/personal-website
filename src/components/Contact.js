@@ -23,15 +23,28 @@ const Contact = () => {
       <h1>Contact Me</h1>
       <p>Once again, my name is <b>Brandon Hill</b>. Please feel free to view and contact me through any of the following links. </p> 
       <p>While you are here, also take a look at my resume as I am always interested in business opportunities.</p>
-      
-      <ul className="centeredUl">
-        
-        <li><i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/in/brandonmhill21/">Linkedin</a><div>(for work related purposes)</div></li>
-        <li><i class="fa-brands fa-github"></i><a href="https://github.com/BranHill21">Github</a><div>(code for my public projects)</div></li>
-        <li><i class="fab fa-itch-io"></i><a href="https://chillbhill.itch.io/">Itch.io</a><div>(link for all my playable games)</div></li>
-      </ul>
+      <div className="social-links">
+  <div>
+    <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/brandonmhill21/"><i className="fa-brands fa-linkedin fa-10x webicon"> </i></a>
+    <br />
+    <p >Linkedin</p>
+    <p>(Work related purposes)</p>
+  </div>
+  <div>
+    <a target="_blank" rel="noreferrer" href="https://github.com/branhill21/"><i className="fa-brands fa-github webicon fa-10x"> </i></a>
+    <br />
+    <p>GitHub</p>
+    <p>(My public coding projects)</p>
+  </div>
+  <div>
+    <a target="_blank" rel="noreferrer" href="https://chillbhill.itch.io/"><i className="fab fa-itch-io webicon fa-10x"> </i></a>
+    <br />
+    <p>Itch.io</p>
+    <p>(Video games I developed)</p>
+  </div>
+</div>
       <br/>
-      <a href="https://drive.google.com/file/d/1RAMxQyxmCIZSwqL3OkcIkYmerbi7vzjZ/view?usp=sharing" className="sudoButton">View Resume</a>
+      <a target="_blank" rel="noreferrer" href="https://drive.google.com/file/d/1RAMxQyxmCIZSwqL3OkcIkYmerbi7vzjZ/view?usp=sharing" className="sudoButton">View Resume</a>
     </div>
   );
 };

@@ -12,3 +12,40 @@
     background-color: snow;
     border-radius: 5px;
 }
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /* space between icons */
+    flex-wrap: wrap;
+    text-align: center; /* keep icons and text centered inside each item */
+    margin: auto;
+    margin-top: 2rem;
+    width: 50%;
+  }
+
+  .webicon {
+    color: snow;
+  }
+
+  .fa-linkedin {
+    color: cornflowerblue;
+  }
+
+  .fa-github {
+    color: snow;
+  }
+
+  .fa-itch-io {
+    color: indianred;
+  }
+  
+  .social-links > div {
+    flex: 1 1 150px; /* allows them to shrink and wrap on small screens */
+  }
+
+  @media (max-width: 768px) {
+    .social-links {
+        width: 100%;
+    }
+  }
