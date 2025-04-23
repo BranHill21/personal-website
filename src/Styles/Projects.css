@@ -1,0 +1,51 @@
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+    width: 100%;
+  }
+  
+  .project-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  }
+  
+  .project-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .project-tags {
+    margin: 1rem 0;
+  }
+  
+  .tag {
+    display: inline-block;
+    background-color: #e6f4ff;
+    color: #0077cc;
+    padding: 0.25rem 0.6rem;
+    margin: 0.2rem;
+    border-radius: 5px;
+    font-size: 0.8rem;
+  }
+  
+  .project-links a {
+    margin-right: 1rem;
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .project-links a:hover {
+    text-decoration: underline;
+  }
