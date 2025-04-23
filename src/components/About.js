@@ -89,7 +89,7 @@ const About = () => {
 
       {/* Music Section */}
       <section className="about-section music-section">
-        <h2>Music I Enjoy</h2>
+        <h2>Album of the day</h2>
         <div className="vinyl-container">
           <div className={`vinyl ${fade ? "fade-in" : "fade-out"}`}>
             <img
@@ -100,8 +100,8 @@ const About = () => {
           </div>
         </div>
         <div>
-        <button className="arrow left-arrow" onClick={prevAlbum}>Prev</button>
-        <button className="arrow right-arrow" onClick={nextAlbum}>Next</button>
+        <button className="arrow left-arrow" onClick={prevAlbum} style={{ display: "none" }}>Prev</button>
+        <button className="arrow right-arrow" onClick={nextAlbum} style={{ display: "none" }}>Next</button>
         </div>
         <p className="album-name">Currently Spinning: <strong>{albums[index].name}</strong></p>
       </section>
