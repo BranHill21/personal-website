@@ -58,7 +58,15 @@ const Skills = () => {
     },
     {
       title: 'Databases',
-      skills: ['MySQL', 'PostgreSQL', 'SQLite3'],
+      skills: [
+        'MySQL', 
+        'PostgreSQL', 
+        'SQLite3',
+        'Firebase Firestore', 
+        'Data Modeling & Schema Design', 
+        'Query Optimization',
+        'Indexing',
+        'Database Migrations (Liquibase, Flyway)',],
     },
   ];
   
