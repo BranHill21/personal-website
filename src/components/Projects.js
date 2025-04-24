@@ -2,36 +2,39 @@
 import React from 'react';
 import Navbar from './Navbar';
 import '../Styles/Projects.css'; // You'll style the cards here
+import NxtfolioPic from '../resources/nxtfoliodefault.png'
+import ACVotePic from '../resources/AC_Logo_white.png'
+import DropperPic from '../resources/dropperblocaction.png'
 
 const projects = [
   {
-    title: 'Gamified Habit Tracker',
-    image: '/images/habit-tracker.png', // make sure this file exists
-    description: 'A Spring Boot app with Firebase that helps users build habits through rewards and collectibles.',
-    tech: ['Java', 'Spring Boot', 'Firebase', 'Heroku'],
+    title: 'Legacy Web App Enhancement',
+    image: NxtfolioPic, // Add a relevant screenshot or use placeholder
+    description: 'Refactored and optimized a legacy web application for mobile responsiveness, security, and performance.',
+    tech: ['Ruby', 'CSS', 'HTML', 'JavaScript', 'SQL', 'Scrum'],
     links: {
-      demo: 'https://your-demo-link.com',
-      github: 'https://github.com/yourusername/habit-tracker'
+      github: '',
+      demo: ''
     }
   },
   {
-    title: '2D Platformer Game',
-    image: '/images/platformer.gif',
-    description: 'A Unity game made in C# featuring unique level design, player mechanics, and animations.',
-    tech: ['C#', 'Unity', 'Itch.io'],
+    title: 'Online Instant Runoff Voting Tool',
+    image: ACVotePic,
+    description: 'A web-based voting system with 100% test coverage, built with Spring Boot and tested using JUnit and Selenium.',
+    tech: ['Java', 'Spring Boot', 'SQL', 'HTML', 'JavaScript', 'JUnit', 'Selenium', 'Scrum'],
     links: {
-      demo: 'https://chillbhill.itch.io/platformer-game',
-      github: 'https://github.com/yourusername/platformer-game'
+      github: '',
+      demo: ''
     }
   },
   {
-    title: 'Portfolio Website',
-    image: '/images/portfolio.png',
-    description: 'This site! A React-based personal portfolio hosted on Netlify with responsive design.',
-    tech: ['React', 'CSS', 'Netlify', 'GitHub'],
+    title: 'Dropper (Playable Unity Game)',
+    image: DropperPic,
+    description: 'An interactive 2D game built in Unity with save/load features, sound design, and custom UI.',
+    tech: ['C#', 'Unity', 'JSON'],
     links: {
-      demo: 'https://yourportfolio.netlify.app',
-      github: 'https://github.com/yourusername/portfolio-site'
+      github: '',
+      demo: 'https://chillbhill.itch.io/dropper'
     }
   }
 ];
