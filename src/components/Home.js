@@ -40,9 +40,9 @@ const Home = () => {
       <Navbar links={Links} />
       <div className="centeredCont">
         {/* Terminal Typing Title */}
-        <h1 style={{ fontSize: "2rem", display: "flex", justifyContent: "center" }}>
+        <h1 style={{ fontSize: "2rem", textAlign: "center", whiteSpace: "pre-wrap" }}>
           <span>{title}</span>
-          <span style={{ visibility: showCursor ? "visible" : "hidden" }}></span>
+          <span className="blink-cursor" style={{ visibility: showCursor ? "visible" : "hidden" }}>|</span>
         </h1>
 
         {/* Tagline */}

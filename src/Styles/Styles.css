@@ -23,7 +23,6 @@ body {
   }
   
   .flashing-text {
-    font-family: monospace;
     font-size: 1.5rem;
     animation: blink 1s step-start infinite;
   }
