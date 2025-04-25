@@ -42,7 +42,7 @@ const Home = () => {
       <div className="centeredCont">
         <h1 style={{fontSize: "2rem", display: "flex", justifyContent: "center" }}>
           <span>{title}</span>
-          <span style={{ visibility: showCursor ? "visible" : "hidden" }}>|</span>
+          <span style={{ visibility: showCursor ? "visible" : "hidden" }}></span>
         </h1>
         <p>
           Hi, welcome to my portfolio. I will be putting my projects and things
