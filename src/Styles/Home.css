@@ -1,0 +1,61 @@
+.cta-button {
+    background: linear-gradient(135deg, #0077cc, #005fa3);
+    color: #ffffff;
+    border: none;
+    padding: 0.75rem 1.75rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    box-shadow: 0 6px 12px rgba(0, 119, 204, 0.3);
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background: linear-gradient(135deg, #005fa3, #003f7f);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 119, 204, 0.4);
+  }
+  
+  .cta-button:active {
+    transform: scale(0.98);
+    box-shadow: 0 3px 6px rgba(0, 119, 204, 0.2);
+  }
+  
+  .section-previews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .preview-card {
+    background: #f9f9f917;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.2s ease;
+  }
+  
+  .preview-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .preview-card button {
+    margin-top: 1rem;
+    background: none;
+    border: 1px solid #0077cc;
+    color: #0077cc;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .preview-card button:hover {
+    background-color: #0077cc;
+    color: white;
+  }
