@@ -44,7 +44,7 @@ const Contact = () => {
   </div>
 </div>
       <br/>
-      <a target="_blank" rel="noreferrer" href="https://drive.google.com/file/d/1RAMxQyxmCIZSwqL3OkcIkYmerbi7vzjZ/view?usp=sharing" className="sudoButton">View Resume</a>
+      <a target="_blank" rel="noreferrer" href="https://drive.google.com/file/d/1UaXxQwhnTwhdNO46REXQLdk3gAdaA7p2/view?usp=sharing" className="sudoButton">View Resume</a>
     </div>
   );
 };
