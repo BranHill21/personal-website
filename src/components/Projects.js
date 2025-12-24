@@ -1,7 +1,7 @@
 // src/components/Projects.js
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Github, ExternalLink, Code } from 'lucide-react';
+import { Github, ExternalLink } from 'lucide-react';
 import '../Styles/Styles.css';
 import '../Styles/Projects.css';
 import NxtfolioPic from '../resources/nxtfoliodefault.png';
