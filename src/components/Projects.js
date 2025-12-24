@@ -97,32 +97,33 @@ const Projects = () => {
                 <div className="project-content">
                   <h3 className="project-title">{project.title}</h3>
                   <p className="project-desc">{project.description}</p>
+
+                  {/* Revealed on Hover */}
+                  <div className="tech-stack-list">
+                    {project.tech.map((t, i) => (
+                      <span key={i} className="tech-item">
+                        {t}
+                      </span>
+                    ))}
+                  </div>
+
+                  <div className="card-links">
+                    {project.links.github && (
+                      <a href={project.links.github} target="_blank" rel="noreferrer" className="icon-link">
+                        <Github size={20} />
+                      </a>
+                    )}
+                    {project.links.demo && (
+                      <a href={project.links.demo} target="_blank" rel="noreferrer" className="icon-link">
+                        <ExternalLink size={20} />
+                      </a>
+                    )}
+                  </div>
                 </div>
 
-                {/* X-Ray / Blueprint Overlay (Visible on Hover) */}
+                {/* X-Ray / Blueprint Overlay (Background Only) */}
                 <div className="xray-overlay">
                   <div className="blueprint-grid"></div>
-                  <div className="xray-content">
-                    <div className="tech-stack-list">
-                      {project.tech.map((t, i) => (
-                        <div key={i} className="tech-item">
-                          <Code size={14} className="accent" /> {t}
-                        </div>
-                      ))}
-                    </div>
-                    <div className="card-links">
-                      {project.links.github && (
-                        <a href={project.links.github} target="_blank" rel="noreferrer" className="icon-link">
-                          <Github size={20} />
-                        </a>
-                      )}
-                      {project.links.demo && (
-                        <a href={project.links.demo} target="_blank" rel="noreferrer" className="icon-link">
-                          <ExternalLink size={20} />
-                        </a>
-                      )}
-                    </div>
-                  </div>
                 </div>
               </div>
             </motion.div>
