@@ -1,82 +1,98 @@
+// src/components/Home.js
 import React, { useState, useEffect } from "react";
-import Navbar from "./Navbar";
-import { useNavigate } from "react-router-dom"; // if using React Router
-import '../Styles/Home.css'
+import { Link } from "react-scroll";
+import { motion } from "framer-motion";
+import { ArrowRight, Code } from "lucide-react";
+import '../Styles/Styles.css'; // Global styles
+import '../Styles/Home.css'; // Specific Hero styles
 
 const Home = () => {
-  const Links = [
-    { path: "/", label: "Home" },
-    { path: "/about", label: "About" },
-    { path: "/skills", label: "Skills" },
-    { path: "/projects", label: "Projects" },
-    { path: "/contact", label: "Contact" },
+  const [textIndex, setTextIndex] = useState(0);
+  const [displayText, setDisplayText] = useState("");
+  const [isDeleting, setIsDeleting] = useState(false);
+
+  const titles = [
+    "Full Stack Software Engineer",
+    "Java & Python Expert",
+    "Unity Game Developer",
+    "Creative Problem Solver"
   ];
 
-  const [title, setTitle] = useState("");
-  const [showCursor, setShowCursor] = useState(true);
-  const fullTitle = "Brandon Hill's Personal Portfolio";
-  const navigate = useNavigate();
+  const typingSpeed = 100;
+  const deletingSpeed = 50;
+  const pauseTime = 2000;
 
   useEffect(() => {
-    let i = 0;
-    const interval = setInterval(() => {
-      setTitle(fullTitle.slice(0, i + 1));
-      i++;
-      if (i === fullTitle.length) clearInterval(interval);
-    }, 100);
+    const handleTyping = () => {
+      const currentTitle = titles[textIndex];
 
-    const cursorInterval = setInterval(() => {
-      setShowCursor((prev) => !prev);
-    }, 500);
+      if (isDeleting) {
+        setDisplayText(currentTitle.substring(0, displayText.length - 1));
+      } else {
+        setDisplayText(currentTitle.substring(0, displayText.length + 1));
+      }
 
-    return () => {
-      clearInterval(interval);
-      clearInterval(cursorInterval);
+      if (!isDeleting && displayText === currentTitle) {
+        setTimeout(() => setIsDeleting(true), pauseTime);
+      } else if (isDeleting && displayText === "") {
+        setIsDeleting(false);
+        setTextIndex((prev) => (prev + 1) % titles.length);
+      }
     };
-  }, []);
+
+    const timer = setTimeout(handleTyping, isDeleting ? deletingSpeed : typingSpeed);
+    return () => clearTimeout(timer);
+  }, [displayText, isDeleting, textIndex]);
 
   return (
-    <div>
-      <Navbar links={Links} />
-      <div className="centeredCont">
-        {/* Terminal Typing Title */}
-        <h1 style={{ fontSize: "2rem", textAlign: "center", whiteSpace: "pre-wrap" }}>
-          <span>{title}</span>
-          <span className="blink-cursor" style={{ visibility: showCursor ? "visible" : "hidden" }}>|</span>
-        </h1>
+    <div className="section hero-section">
+      <div className="container hero-container">
+        {/* Text Content */}
+        <motion.div
+          className="hero-content"
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          <p className="hero-greeting code-font">Hello, my name is</p>
+          <h1 className="hero-name">Brandon Hill<span className="accent">.</span></h1>
+          <h2 className="hero-subtitle">
+            I am a <span className="typing-text">{displayText}</span>
+            <span className="cursor">|</span>
+          </h2>
+          <p className="hero-description">
+            I build accessible, pixel-perfect, and performant web applications.
+            Currently focused on building scalable backend systems in
+            <span className="highlight"> Java</span> and <span className="highlight">Python</span>.
+          </p>
 
-        {/* Tagline */}
-        <h2 style={{ marginTop: "1rem", fontWeight: "400", color: "#555" }}>
-          Software Engineer • Full Stack Developer
-        </h2>
-        <h2 style={{ marginTop: "1rem", fontWeight: "400", color: "#555" }}>
-          Java | C# | Python | Spring Boot | React
-        </h2>
+          <div className="hero-cta">
+            <Link to="projects" smooth={true} duration={500} offset={-80}>
+              <button className="primary-btn">
+                Check out my work <ArrowRight size={18} style={{ marginLeft: '8px' }} />
+              </button>
+            </Link>
+          </div>
+        </motion.div>
 
-        {/* CTA Buttons */}
-        <div style={{ marginTop: "2rem", display: "flex", gap: "1rem", justifyContent: "center" }}>
-          <button onClick={() => navigate("/projects")} className="cta-button">View Projects</button>
-          <button onClick={() => navigate("/contact")} className="cta-button">Contact Me</button>
-        </div>
-
-        {/* Section Previews */}
-        <div className="section-previews" style={{ marginTop: "4rem" }}>
-          <div className="preview-card">
-            <h3>About Me</h3>
-            <p>I'm a software engineer passionate about full-stack development and clean, testable code. I'm always building something new — come see what I've been up to.</p>
-            <button onClick={() => navigate("/about")}>Read More</button>
+        {/* Visual / 3D Element */}
+        <motion.div
+          className="hero-visual"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+        >
+          <div className="glowing-cube-container">
+            <motion.div
+              className="tech-icon-wrapper"
+              animate={{ y: [0, -20, 0] }}
+              transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
+            >
+              <Code size={120} color="#38bdf8" strokeWidth={1} />
+            </motion.div>
+            <div className="glow-effect"></div>
           </div>
-          <div className="preview-card">
-            <h3>Skills</h3>
-            <p>From Java and Spring Boot to React and Unity, I've worked across the stack. See the tools I use and love working with.</p>
-            <button onClick={() => navigate("/skills")}>Explore Skills</button>
-          </div>
-          <div className="preview-card">
-            <h3>Projects</h3>
-            <p>See real-world applications I've built — from voting systems to games and full-stack web apps. Code and demos included.</p>
-            <button onClick={() => navigate("/projects")}>View Projects</button>
-          </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

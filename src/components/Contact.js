@@ -1,50 +1,56 @@
-// src/components/About.js
+// src/components/Contact.js
 import React from 'react';
-import Navbar from './Navbar';
-import "../Styles/Contact.css";
-import '@fortawesome/fontawesome-free/css/all.min.css';
+import { motion } from 'framer-motion';
+import { Linkedin, Github, Gamepad2, Mail } from 'lucide-react';
+import '../Styles/Styles.css';
+import '../Styles/Contact.css';
 
 const Contact = () => {
-  const Links = [
-    { path: '/', label: 'Home' },
-    { path: '/about', label: 'About' },
-    { path: '/skills', label: 'Skills' },
-    { path: '/projects', label: 'Projects' },
-    { path: '/contact', label: 'Contact' },
-  ];
-
-  const Style = {
-    /*backgroundColor: 'lightgreen',*/
-  };
-
   return (
-    <div className="centeredCont">
-      <Navbar links={Links} customStyle={Style} />
-      <h1>Contact Me</h1>
-      <p>Once again, my name is <b>Brandon Hill</b>. Please feel free to view and contact me through any of the following links. </p> 
-      <p>While you are here, also take a look at my resume as I am always interested in business opportunities.</p>
-      <div className="social-links">
-  <div>
-    <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/brandonmhill21/"><i className="fa-brands fa-linkedin webicon"> </i></a>
-    <br />
-    <p >Linkedin</p>
-    <p>(Work)</p>
-  </div>
-  <div>
-    <a target="_blank" rel="noreferrer" href="https://github.com/branhill21/"><i className="fa-brands fa-github webicon"> </i></a>
-    <br />
-    <p>GitHub</p>
-    <p>(Projects)</p>
-  </div>
-  <div>
-    <a target="_blank" rel="noreferrer" href="https://chillbhill.itch.io/"><i className="fab fa-itch-io webicon"> </i></a>
-    <br />
-    <p>Itch.io</p>
-    <p>(Games)</p>
-  </div>
-</div>
-      <br/>
-      <a target="_blank" rel="noreferrer" href="https://drive.google.com/file/d/1UaXxQwhnTwhdNO46REXQLdk3gAdaA7p2/view?usp=sharing" className="sudoButton">View Resume</a>
+    <div className="section contact-section">
+      <div className="container contact-container">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+          className="glass-card contact-card"
+        >
+          <h2 className="section-title">Let's Connect<span className="accent">.</span></h2>
+          <p className="section-subtitle">
+            I am currently open to new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+          </p>
+
+          <div className="social-links-grid">
+            <a href="https://www.linkedin.com/in/brandonmhill21/" target="_blank" rel="noreferrer" className="social-box">
+              <Linkedin size={32} />
+              <span>LinkedIn</span>
+            </a>
+
+            <a href="https://github.com/branhill21/" target="_blank" rel="noreferrer" className="social-box">
+              <Github size={32} />
+              <span>GitHub</span>
+            </a>
+
+            <a href="https://chillbhill.itch.io/" target="_blank" rel="noreferrer" className="social-box">
+              <Gamepad2 size={32} />
+              <span>Itch.io</span>
+            </a>
+          </div>
+
+          <div className="email-cta">
+            <a href="mailto:brandonhill21@example.com" className="primary-btn">
+              <Mail size={20} style={{ marginRight: '8px' }} /> Say Hello
+            </a>
+          </div>
+
+          <div className="resume-download">
+            <a href="https://drive.google.com/file/d/1UaXxQwhnTwhdNO46REXQLdk3gAdaA7p2/view?usp=sharing" target="_blank" rel="noreferrer" className="link-text">
+              View My Resume
+            </a>
+          </div>
+        </motion.div>
+      </div>
     </div>
   );
 };

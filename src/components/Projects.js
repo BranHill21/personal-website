@@ -1,59 +1,61 @@
 // src/components/Projects.js
 import React from 'react';
-import Navbar from './Navbar';
-import '../Styles/Projects.css'; // You'll style the cards here
-import NxtfolioPic from '../resources/nxtfoliodefault.png'
-import ACVotePic from '../resources/AC_Logo_white.png'
-import DropperPic from '../resources/dropperblocaction.png'
-import PortfolioPic from '../resources/portfoliosite.png'
-import PortalRunnerPic from '../resources/portalrunner.png'
+import { motion } from 'framer-motion';
+import { Github, ExternalLink, Code } from 'lucide-react';
+import '../Styles/Styles.css';
+import '../Styles/Projects.css';
+import NxtfolioPic from '../resources/nxtfoliodefault.png';
+import ACVotePic from '../resources/AC_Logo_white.png';
+import DropperPic from '../resources/dropperblocaction.png';
+import PortfolioPic from '../resources/portfoliosite.png';
+import PortalRunnerPic from '../resources/portalrunner.png';
 
 const projects = [
   {
     title: 'Portfolio Website',
-    image: PortfolioPic, // make sure to import or define this image like the others
-    description: 'This website you are currently on! A responsive portfolio site built with React and custom CSS to showcase my projects, skills, and contact information. Automatically deployed through Netlify.',
-    tech: ['React', 'JavaScript', 'CSS', 'Netlify', 'GitHub'],
+    image: PortfolioPic,
+    description: 'A responsive, high-performance portfolio SPA built with React and custom Framer Motion animations to showcase technical skills.',
+    tech: ['React', 'Framer Motion', 'CSS3', 'Netlify'],
     links: {
       github: 'https://github.com/BranHill21/personal-website',
-      demo: 'https://brandonhill.netlify.app/' // replace with your real link
+      demo: 'https://brandonhill.netlify.app/'
     }
   },
   {
     title: 'Legacy Web App Enhancement',
-    image: NxtfolioPic, // Add a relevant screenshot or use placeholder
-    description: 'Refactored and optimized a legacy web application for mobile responsiveness, security, and performance.',
-    tech: ['Ruby', 'Rails', 'CSS', 'HTML', 'JavaScript', 'SQL', 'GitHub'],
+    image: NxtfolioPic,
+    description: 'Refactored and optimized a legacy Ruby on Rails application, improving mobile responsiveness and security compliance.',
+    tech: ['Ruby on Rails', 'PostgreSQL', 'JavaScript', 'Bootstrap'],
     links: {
-      github: '',
+      github: 'https://github.com/BranHill21/NXTFolio',
       demo: ''
     }
   },
   {
-    title: 'Online Instant Runoff Voting Tool',
+    title: 'Instant Runoff Voting System',
     image: ACVotePic,
-    description: 'A web-based voting system with 100% test coverage, built with Spring Boot and tested using JUnit and Selenium.',
-    tech: ['Java', 'Spring Boot', 'SQL', 'HTML', 'JavaScript', 'JUnit', 'Selenium', 'GitHub'],
+    description: 'Web-based voting platform implementing the Instant Runoff algorithm. Features 100% test coverage with JUnit and Selenium integration.',
+    tech: ['Java', 'Spring Boot', 'Selenium', 'JUnit', 'MySQL'],
     links: {
       github: '',
       demo: ''
     }
   },
   {
-    title: 'Dropper (Playable Unity Game)',
+    title: 'Dropper',
     image: DropperPic,
-    description: 'An interactive 2D game built in Unity with save/load features, Firestore database with authentication and leaderboard, sound design, and custom UI.',
-    tech: ['C#', 'Unity', 'JSON', 'Firebase Firestore'],
+    description: 'An interactive 2D conceptual game with cloud-based leaderboards, saving systems, and custom physics interactions.',
+    tech: ['C#', 'Unity', 'Firebase', 'Data Structures'],
     links: {
       github: '',
       demo: 'https://chillbhill.itch.io/dropper'
     }
   },
   {
-    title: 'Portal Runner (Playable Unity Game)',
+    title: 'Portal Runner',
     image: PortalRunnerPic,
-    description: 'An interactive 2D infinite runner game built in Unity with save/load features, custom UI, and many visual effects.',
-    tech: ['C#', 'Unity', 'JSON'],
+    description: 'Infinite runner optimized for mobile performance, featuring custom shader graphs and object pooling design patterns.',
+    tech: ['C#', 'Unity', 'HLSL', 'Design Patterns'],
     links: {
       github: '',
       demo: 'https://chillbhill.itch.io/portal-runner'
@@ -62,50 +64,70 @@ const projects = [
 ];
 
 const Projects = () => {
-  const Links = [
-    { path: '/', label: 'Home' },
-    { path: '/about', label: 'About' },
-    { path: '/skills', label: 'Skills' },
-    { path: '/projects', label: 'Projects' },
-    { path: '/contact', label: 'Contact' },
-  ];
-
-  const getLinkText = (url) => {
-    if (url.includes('github.com')) return 'View Code';
-    if (url.includes('itch.io')) return 'Play on Itch.io';
-    if (url.includes('netlify.app') || url.includes('vercel.app') || url.includes('herokuapp.com')) return 'View Live Demo';
-    return 'Visit';
-  };
-
   return (
-    <div className="centeredCont">
-      <Navbar links={Links} />
-      <h1>Projects</h1>
-      <div className="projects-grid">
-        {projects.map((project, idx) => (
-          <div key={idx} className="project-card">
-            <img src={project.image} alt={project.title} className="project-img" />
-            <h3>{project.title}</h3>
-            <p>{project.description}</p>
-            <div className="project-tags">
-              {project.tech.map((tech, i) => (
-                <span key={i} className="tag">{tech}</span>
-              ))}
-            </div>
-            <div className="project-links">
-              {project.links.github && (
-                <a href={project.links.github} target="_blank" rel="noreferrer">
-                  {getLinkText(project.links.github)}
-                </a>
-              )}
-              {project.links.demo && (
-                <a href={project.links.demo} target="_blank" rel="noreferrer">
-                  {getLinkText(project.links.demo)}
-                </a>
-              )}
-            </div>
-          </div>
-        ))}
+    <div className="section projects-section">
+      <div className="container">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+        >
+          <h2 className="section-title">Featured Projects<span className="accent">.</span></h2>
+          <p className="section-subtitle">A selection of code, games, and systems.</p>
+        </motion.div>
+
+        <div className="projects-grid">
+          {projects.map((project, index) => (
+            <motion.div
+              className="project-card-wrapper"
+              key={index}
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              viewport={{ once: true }}
+            >
+              <div className="project-card">
+                {/* Image Background */}
+                <div className="project-image" style={{ backgroundImage: `url(${project.image})` }}>
+                  <div className="overlay"></div>
+                </div>
+
+                {/* Content */}
+                <div className="project-content">
+                  <h3 className="project-title">{project.title}</h3>
+                  <p className="project-desc">{project.description}</p>
+                </div>
+
+                {/* X-Ray / Blueprint Overlay (Visible on Hover) */}
+                <div className="xray-overlay">
+                  <div className="blueprint-grid"></div>
+                  <div className="xray-content">
+                    <div className="tech-stack-list">
+                      {project.tech.map((t, i) => (
+                        <div key={i} className="tech-item">
+                          <Code size={14} className="accent" /> {t}
+                        </div>
+                      ))}
+                    </div>
+                    <div className="card-links">
+                      {project.links.github && (
+                        <a href={project.links.github} target="_blank" rel="noreferrer" className="icon-link">
+                          <Github size={20} />
+                        </a>
+                      )}
+                      {project.links.demo && (
+                        <a href={project.links.demo} target="_blank" rel="noreferrer" className="icon-link">
+                          <ExternalLink size={20} />
+                        </a>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
       </div>
     </div>
   );

@@ -1,62 +1,66 @@
-.sudoButton {
-  margin: auto;
-  margin-top: 1%;
-  text-align: center;
+/* src/Styles/Contact.css */
+
+.contact-section {
   display: flex;
-  justify-content: center;
   align-items: center;
-  padding: 10px 20px;
-  width: 20%;
-  text-decoration: none;
-  color: black;
-  background-color: snow;
-  border-radius: 5px;
+  justify-content: center;
+  text-align: center;
 }
 
-.social-links {
+.contact-container {
   display: flex;
   justify-content: center;
-  gap: 2rem; /* space between icons */
-  flex-wrap:nowrap;
-  text-align: center;
-  margin: auto;
-  margin-top: 2rem;
-  width: 50%;
 }
 
-.webicon {
-  color: snow;
-  font-size: 8rem; /* Default size for desktop */
-  transition: font-size 0.3s ease;
+.contact-card {
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
 }
 
-.fa-linkedin {
-  color: cornflowerblue;
+.social-links-grid {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
 }
 
-.fa-github {
-  color: snow;
+.social-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-secondary);
+  padding: 1rem;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  min-width: 100px;
 }
 
-.fa-itch-io {
-  color: indianred;
+.social-box:hover {
+  color: var(--accent-primary);
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateY(-3px);
 }
 
-.social-links > div {
-  flex: 1 1 150px; /* allows items to shrink and wrap */
+.social-box span {
+  font-size: 0.9rem;
+  font-weight: 500;
 }
 
-@media (max-width: 768px) {
-  .social-links {
-      width: 100%;
-      gap: 0rem; /* space between icons */
-  }
+.email-cta {
+  margin-bottom: 1rem;
+}
 
-  .webicon {
-      font-size: 4rem; /* Shrink icons on smaller screens */
-  }
+.link-text {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
 
-  .sudoButton {
-      width: 65%;
-  }
+.link-text:hover {
+  color: var(--accent-primary);
 }
