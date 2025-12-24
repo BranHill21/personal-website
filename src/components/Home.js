@@ -6,17 +6,17 @@ import { ArrowRight, Code } from "lucide-react";
 import '../Styles/Styles.css'; // Global styles
 import '../Styles/Home.css'; // Specific Hero styles
 
+const titles = [
+  "Full Stack Software Engineer",
+  "Java & Python Expert",
+  "Unity Game Developer",
+  "Creative Problem Solver"
+];
+
 const Home = () => {
   const [textIndex, setTextIndex] = useState(0);
   const [displayText, setDisplayText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
-
-  const titles = [
-    "Full Stack Software Engineer",
-    "Java & Python Expert",
-    "Unity Game Developer",
-    "Creative Problem Solver"
-  ];
 
   const typingSpeed = 100;
   const deletingSpeed = 50;
