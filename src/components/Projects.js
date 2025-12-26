@@ -12,17 +12,47 @@ import PortalRunnerPic from '../resources/portalrunner.png';
 
 const projects = [
   {
-    title: 'Portfolio Website',
-    image: PortfolioPic,
-    description: 'A responsive, high-performance portfolio SPA built with React and custom Framer Motion animations to showcase technical skills.',
-    tech: ['React', 'Framer Motion', 'CSS3', 'Netlify'],
+    title: 'Cache Replacement Research',
+    image: PortfolioPic, // Placeholder - Replace with C++/Terminal screenshot
+    description: 'Implemented a novel Expected Hit Count (EHC) cache policy in C++ within the zsim simulator. Outperformed standard LRU/SRRIP algorithms in standardized benchmarks.',
+    tech: ['C++', 'Linux', 'zsim', 'Bash', 'Algorithms'],
     links: {
-      github: 'https://github.com/BranHill21/personal-website',
-      demo: 'https://brandonhill.netlify.app/'
+      github: '', // Add link if available
+      demo: ''
     }
   },
   {
-    title: 'Legacy Web App Enhancement',
+    title: 'AI Stock Market Prediction',
+    image: PortfolioPic, // Placeholder - Replace with Graph/Chart screenshot
+    description: 'Designed an end-to-end deep learning system using TensorFlow/Keras to predict short-term market trends with custom feature engineering and validation.',
+    tech: ['Python', 'TensorFlow', 'Keras', 'Pandas', 'Scikit-learn'],
+    links: {
+      github: '', // Add link if available
+      demo: ''
+    }
+  },
+  {
+    title: 'Deep Learning MoE Architecture',
+    image: PortfolioPic, // Placeholder - Replace with Model Architecture diagram
+    description: 'Architected a custom Mixture of Experts (MoE) model, utilizing expert subnetworks and gating mechanisms to improve predictive accuracy on heterogeneous data.',
+    tech: ['Python', 'Keras', 'NumPy', 'Deep Learning', 'Ensembling'],
+    links: {
+      github: '', // Add link if available
+      demo: ''
+    }
+  },
+  {
+    title: 'AC Vote',
+    image: ACVotePic,
+    description: 'A full-stack voting application facilitating secure, anonymous, and real-time elections for organizations.',
+    tech: ['Java', 'Spring Boot', 'MySQL', 'Thymeleaf', 'Docker'],
+    links: {
+      github: 'https://github.com/BranHill21/ACVote',
+      demo: ''
+    }
+  },
+  {
+    title: 'NXTFolio',
     image: NxtfolioPic,
     description: 'Refactored and optimized a legacy Ruby on Rails application, improving mobile responsiveness and security compliance.',
     tech: ['Ruby on Rails', 'PostgreSQL', 'JavaScript', 'Bootstrap'],
@@ -32,33 +62,13 @@ const projects = [
     }
   },
   {
-    title: 'Instant Runoff Voting System',
-    image: ACVotePic,
-    description: 'Web-based voting platform implementing the Instant Runoff algorithm. Features 100% test coverage with JUnit and Selenium integration.',
-    tech: ['Java', 'Spring Boot', 'Selenium', 'JUnit', 'MySQL'],
-    links: {
-      github: '',
-      demo: ''
-    }
-  },
-  {
     title: 'Dropper',
     image: DropperPic,
-    description: 'An interactive 2D conceptual game with cloud-based leaderboards, saving systems, and custom physics interactions.',
-    tech: ['C#', 'Unity', 'Firebase', 'Data Structures'],
+    description: 'A physics-based arcade game built in Unity, featuring custom player controllers and leaderboard systems.',
+    tech: ['C#', 'Unity', 'Game Physics', 'Android'],
     links: {
       github: '',
-      demo: 'https://chillbhill.itch.io/dropper'
-    }
-  },
-  {
-    title: 'Portal Runner',
-    image: PortalRunnerPic,
-    description: 'Infinite runner optimized for mobile performance, featuring custom shader graphs and object pooling design patterns.',
-    tech: ['C#', 'Unity', 'HLSL', 'Design Patterns'],
-    links: {
-      github: '',
-      demo: 'https://chillbhill.itch.io/portal-runner'
+      demo: 'https://play.google.com/store/apps/details?id=com.B_Hill.Dropper&hl=en_US&gl=US'
     }
   }
 ];
