@@ -17,7 +17,7 @@ const projects = [
   {
     title: 'Cache Replacement Research',
     image: CppIcon, // Placeholder - Replace with C++/Terminal screenshot
-    description: 'Implemented a novel Expected Hit Count (EHC) cache policy in C++ within the zsim simulator. Outperformed standard LRU/SRRIP algorithms in standardized benchmarks.',
+    description: 'Top-performing submission in a systems research competition. Implemented a novel Expected Hit Count (EHC) cache policy in C++ within the zsim simulator. Outperformed standard LRU/SRRIP algorithms.',
     tech: ['C++', 'C', 'Linux', 'zsim', 'Bash', 'Algorithms'],
     links: {
       github: '', // Add link if available
@@ -37,7 +37,7 @@ const projects = [
   {
     title: 'Deep Learning MoE Architecture',
     image: DeepMoEIcon, // Placeholder - Replace with Model Architecture diagram
-    description: 'Architected a custom Mixture of Experts (MoE) model, utilizing expert subnetworks and gating mechanisms to improve predictive accuracy on heterogeneous data.',
+    description: 'Finalist in Keras Deep Learning Competition. Architected a custom Mixture of Experts (MoE) model utilizing expert subnetworks to improve predictive accuracy on heterogeneous data.',
     tech: ['Python', 'Keras', 'NumPy', 'Deep Learning', 'Ensembling'],
     links: {
       github: '', // Add link if available
