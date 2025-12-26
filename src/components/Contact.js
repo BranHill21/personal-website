@@ -1,7 +1,7 @@
 // src/components/Contact.js
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Linkedin, Github, Gamepad2, Mail } from 'lucide-react';
+import { Linkedin, Github, Gamepad2 } from 'lucide-react';
 import '../Styles/Styles.css';
 import '../Styles/Contact.css';
 
@@ -38,11 +38,11 @@ const Contact = () => {
             </a>
           </div>
 
-          <div className="email-cta">
+          {/* <div className="email-cta">
             <a href="mailto:brandonhill21@example.com" className="primary-btn">
               <Mail size={20} style={{ marginRight: '8px' }} /> Say Hello
             </a>
-          </div>
+          </div> */}
 
           <div className="resume-download">
             <a href="https://drive.google.com/file/d/1UaXxQwhnTwhdNO46REXQLdk3gAdaA7p2/view?usp=sharing" target="_blank" rel="noreferrer" className="link-text">
