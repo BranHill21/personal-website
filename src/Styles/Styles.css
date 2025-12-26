@@ -3,22 +3,30 @@
 
 :root {
   /* Theme Colors - Engineering Blueprint */
-  --bg-primary: #0f172a;    /* Slate 900 */
-  --bg-secondary: #1e293b;  /* Slate 800 */
-  --bg-tertiary: #334155;   /* Slate 700 */
-  
-  --accent-primary: #38bdf8; /* Sky 400 */
-  --accent-secondary: #818cf8; /* Indigo 400 */
+  --bg-primary: #0f172a;
+  /* Slate 900 */
+  --bg-secondary: #1e293b;
+  /* Slate 800 */
+  --bg-tertiary: #334155;
+  /* Slate 700 */
+
+  --accent-primary: #38bdf8;
+  /* Sky 400 */
+  --accent-secondary: #818cf8;
+  /* Indigo 400 */
   --accent-glow: rgba(56, 189, 248, 0.3);
 
-  --text-primary: #f1f5f9;  /* Slate 100 */
-  --text-secondary: #94a3b8; /* Slate 400 */
-  --text-muted: #64748b;    /* Slate 500 */
+  --text-primary: #f1f5f9;
+  /* Slate 100 */
+  --text-secondary: #94a3b8;
+  /* Slate 400 */
+  --text-muted: #64748b;
+  /* Slate 500 */
 
   /* Spacing & Layout */
   --nav-height: 80px;
   --max-width: 1200px;
-  
+
   /* Glassmorphism */
   --glass-bg: rgba(15, 23, 42, 0.7);
   --glass-border: rgba(255, 255, 255, 0.08);
@@ -31,12 +39,14 @@
   padding: 0;
 }
 
+html,
 body {
   font-family: 'Inter', sans-serif;
   background-color: var(--bg-primary);
   color: var(--text-primary);
   line-height: 1.6;
   overflow-x: hidden;
+  width: 100%;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -48,7 +58,7 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: 
+  background-image:
     linear-gradient(var(--glass-border) 1px, transparent 1px),
     linear-gradient(90deg, var(--glass-border) 1px, transparent 1px);
   background-size: 50px 50px;
@@ -58,15 +68,30 @@ body::before {
   opacity: 0.4;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 700;
   color: var(--text-primary);
   margin-bottom: 1rem;
 }
 
-h1 { font-size: 3rem; letter-spacing: -0.02em; }
-h2 { font-size: 2.25rem; letter-spacing: -0.01em; }
-h3 { font-size: 1.5rem; }
+h1 {
+  font-size: 3rem;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: 2.25rem;
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
 
 p {
   color: var(--text-secondary);
@@ -92,7 +117,8 @@ a:hover {
 
 .section {
   min-height: 100vh;
-  padding: 6rem 0; /* Space for Navbar */
+  padding: 6rem 0;
+  /* Space for Navbar */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -124,13 +150,16 @@ a:hover {
 ::-webkit-scrollbar {
   width: 10px;
 }
+
 ::-webkit-scrollbar-track {
   background: var(--bg-primary);
 }
+
 ::-webkit-scrollbar-thumb {
   background: var(--bg-tertiary);
   border-radius: 5px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: var(--accent-secondary);
 }

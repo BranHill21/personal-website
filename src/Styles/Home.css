@@ -172,3 +172,18 @@
     /* Hide complex visual on mobile to save space */
   }
 }
+
+@media (max-width: 480px) {
+  .hero-name {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .container {
+    padding: 0 1rem;
+    /* Reduce padding on very small screens */
+  }
+}
