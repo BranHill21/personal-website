@@ -7,13 +7,16 @@ import '../Styles/Projects.css';
 import NxtfolioPic from '../resources/nxtfoliodefault.png';
 import ACVotePic from '../resources/AC_Logo_white.png';
 import DropperPic from '../resources/dropperblocaction.png';
-import PortfolioPic from '../resources/portfoliosite.png';
+// import PortfolioPic from '../resources/portfoliosite.png';
+import CppIcon from '../resources/cppicon.png';
+import DeepMoEIcon from '../resources/deepMoE.png';
+import StockfolioPic from '../resources/stockfolio_image.png';
 // import PortalRunnerPic from '../resources/portalrunner.png';
 
 const projects = [
   {
     title: 'Cache Replacement Research',
-    image: PortfolioPic, // Placeholder - Replace with C++/Terminal screenshot
+    image: CppIcon, // Placeholder - Replace with C++/Terminal screenshot
     description: 'Implemented a novel Expected Hit Count (EHC) cache policy in C++ within the zsim simulator. Outperformed standard LRU/SRRIP algorithms in standardized benchmarks.',
     tech: ['C++', 'C', 'Linux', 'zsim', 'Bash', 'Algorithms'],
     links: {
@@ -23,7 +26,7 @@ const projects = [
   },
   {
     title: 'AI Stock Market Prediction',
-    image: PortfolioPic, // Placeholder - Replace with Graph/Chart screenshot
+    image: StockfolioPic, // Placeholder - Replace with Graph/Chart screenshot
     description: 'Designed an end-to-end deep learning system using TensorFlow/Keras to predict short-term market trends with custom feature engineering and validation.',
     tech: ['Python', 'TensorFlow', 'Keras', 'Pandas', 'Scikit-learn'],
     links: {
@@ -33,7 +36,7 @@ const projects = [
   },
   {
     title: 'Deep Learning MoE Architecture',
-    image: PortfolioPic, // Placeholder - Replace with Model Architecture diagram
+    image: DeepMoEIcon, // Placeholder - Replace with Model Architecture diagram
     description: 'Architected a custom Mixture of Experts (MoE) model, utilizing expert subnetworks and gating mechanisms to improve predictive accuracy on heterogeneous data.',
     tech: ['Python', 'Keras', 'NumPy', 'Deep Learning', 'Ensembling'],
     links: {
