@@ -8,19 +8,19 @@ const Skills = () => {
   const skillCategories = [
     {
       title: 'Languages',
-      skills: ['Java', 'Python', 'C#', 'JavaScript (ES6+)', 'SQL', 'HTML5/CSS3', 'Bash'],
+      skills: ['Java', 'Python', 'C++', 'C', 'C#', 'JavaScript', 'SQL', 'Bash'],
     },
     {
-      title: 'Frameworks & Libs',
-      skills: ['Spring Boot', 'React', 'Node.js', 'Flask', 'JUnit', 'Selenium', 'Unity'],
+      title: 'Frameworks & Libraries',
+      skills: ['Spring Boot', 'React', 'TensorFlow', 'Keras', 'Pandas', 'NumPy', 'Unity'],
     },
     {
       title: 'Tools & DevOps',
-      skills: ['Git/GitHub', 'Docker', 'Firebase', 'AWS (Basic)', 'Jira', 'PostgreSQL', 'Maven/Gradle'],
+      skills: ['Linux', 'Docker', 'Git/GitHub', 'AWS', 'PostgreSQL', 'Jupyter', 'Firebase'],
     },
     {
       title: 'Concepts',
-      skills: ['RESTful APIs', 'OOP', 'TDD/BDD', 'Microservices', 'Agile/Scrum', 'Data Structures'],
+      skills: ['Machine Learning', 'Deep Learning', 'System Design', 'Algorithms', 'OOP', 'REST APIs'],
     },
   ];
 
