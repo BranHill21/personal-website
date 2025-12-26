@@ -8,14 +8,14 @@ import NxtfolioPic from '../resources/nxtfoliodefault.png';
 import ACVotePic from '../resources/AC_Logo_white.png';
 import DropperPic from '../resources/dropperblocaction.png';
 import PortfolioPic from '../resources/portfoliosite.png';
-import PortalRunnerPic from '../resources/portalrunner.png';
+// import PortalRunnerPic from '../resources/portalrunner.png';
 
 const projects = [
   {
     title: 'Cache Replacement Research',
     image: PortfolioPic, // Placeholder - Replace with C++/Terminal screenshot
     description: 'Implemented a novel Expected Hit Count (EHC) cache policy in C++ within the zsim simulator. Outperformed standard LRU/SRRIP algorithms in standardized benchmarks.',
-    tech: ['C++', 'Linux', 'zsim', 'Bash', 'Algorithms'],
+    tech: ['C++', 'C', 'Linux', 'zsim', 'Bash', 'Algorithms'],
     links: {
       github: '', // Add link if available
       demo: ''
