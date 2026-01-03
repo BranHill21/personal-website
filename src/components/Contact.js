@@ -45,7 +45,7 @@ const Contact = () => {
           </div> */}
 
           <div className="resume-download">
-            <a href="https://drive.google.com/file/d/1UaXxQwhnTwhdNO46REXQLdk3gAdaA7p2/view?usp=sharing" target="_blank" rel="noreferrer" className="link-text">
+            <a href="https://drive.google.com/file/d/1cY2h3-FelCpYQkMnNng46NHB53aM5gVZ/view?usp=sharing" target="_blank" rel="noreferrer" className="link-text">
               View My Resume
             </a>
           </div>
